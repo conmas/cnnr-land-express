@@ -1,0 +1,58 @@
+extends layout
+
+block content
+	+nav('index')
+	
+	img.headshot(src='./images/headshot.jpeg' alt='Connor Mason Headshot')
+
+	h1 Hello, I&#8217;m Connor.
+
+	p Connor Mason is a product leader and strategist living in Chicago. He&#8217;s passionate about human-centric product design, accessible software, and digital privacy. He likes coffee, Marvel movies, and talking with&nbsp;his&nbsp;hands.
+
+	p Connor is available for freelance presentation design, copywriting, and sales pitch consulting work. 
+		span(style='white-space:nowrap;')
+			a(
+				target='_blank' 
+				title='Hire Connor for Freelance Work' 
+				href='mailto:hello@cnnr.land?subject=Let%E2%80%99s%20work%20together&#46;'
+			) Tell me about your project.
+				
+
+	h2 Get in touch.
+
+	.icons
+		a(
+			alt='Follow @conmas on Twitter'
+			href='https://www.twitter.com/conmas/'
+			target='_blank') 
+			include includes/icons/twitter
+		a(
+			alt='Follow @conmas on Instagram'
+			href='https://www.instagram.com/conmas/'
+			target='_blank')
+			include includes/icons/instagram
+		a(
+			alt='Reach Connor on LinkedIn'
+			href='https://www.linkedin.com/in/cnnrmsn/'
+			target='_blank')
+			include includes/icons/linkedin
+		a(
+			alt='Read Connor’s work on Medium'
+			href='https://medium.com/@cnnr'
+			target='_blank')
+			include includes/icons/file-text
+		a(
+			alt='Follow Connor on Apple Music'
+			href='https://music.apple.com/profile/cnnr/'
+			target='_blank')
+			include includes/icons/music
+		a(
+			alt='Send Connor an Email'
+			href='mailto:connormason@icloud.com?subject=Hello%20Connor'
+			target='_blank')
+			include includes/icons/at-sign
+		a(
+			alt='Send Connor an iMessage'
+			href='sms:connormason@icloud.com'
+			target='_blank')
+			include includes/icons/message-circle

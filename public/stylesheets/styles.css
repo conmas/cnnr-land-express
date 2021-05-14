@@ -1,0 +1,155 @@
+:root {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+  color-scheme: light dark;
+  --div-main: #f1f1f1;
+  --accent-color: #00c490;
+  --accent-color-hover: #00915D;
+  --accent-color-press: #005E2A;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --div-main: black;
+    --accent-color: #e7126e;
+    --accent-color-hover: #B4003B;
+    --accent-color-press: #810008;
+  }
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  line-height: 1.5em;
+  padding: 1em;
+  font-size: 1.5em;
+}
+@media (max-width: 1000px) {
+  body {
+    font-size: 1em;
+  }
+}
+@media (max-width: 800px) {
+  body {
+    padding: 0.8em;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    padding: 0.5em;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background: url(../images/dark-background.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+nav {
+  display: block;
+  width: 100%;
+  text-align: right;
+}
+nav a {
+  padding-left: 1em;
+}
+
+div.main {
+  background-color: var(--div-main);
+  padding: 5em 8em 5em 8em;
+}
+@media (max-width: 800px) {
+  div.main {
+    padding: 4em;
+  }
+}
+@media (max-width: 600px) {
+  div.main {
+    padding: 2em;
+  }
+}
+
+h1 {
+  line-height: 1.2em;
+  font-weight: 700;
+  font-size: 2.7em;
+}
+@media (max-width: 800px) {
+  h1 {
+    font-size: 2em;
+  }
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.75em;
+  }
+}
+
+h2 {
+  line-height: 1.2em;
+  font-weight: 700;
+  font-size: 2em;
+}
+@media (max-width: 1000px) {
+  h2 {
+    font-size: 1.5em;
+  }
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: all 0.4s ease;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: all 0.4s ease;
+  -webkit-transition-timing-function: ease-in-out;
+}
+a:hover, a:focus {
+  color: var(--accent-color-hover);
+}
+a:active {
+  color: var(--accent-color-press);
+}
+
+svg, object {
+  width: 2em;
+  height: 2em;
+  background-size: 2em 2em;
+  padding-right: 1.5em;
+}
+@media (max-width: 800px) {
+  svg, object {
+    width: 1.8em;
+    height: 1.8em;
+    background-size: 1.8em 1.8em;
+    padding-right: 1.25em;
+  }
+}
+@media (max-width: 600px) {
+  svg, object {
+    width: 1.5em;
+    height: 1.5em;
+    background-size: 1.5em 1.5em;
+    padding-right: 1em;
+  }
+}
+
+p {
+  max-width: 80%;
+}
+
+.headshot {
+  height: 5em;
+  width: 5em;
+  border-radius: 500px;
+  -webkit-border-radius: 500px;
+  outline: none;
+}
+
+/*# sourceMappingURL=styles.css.map */
